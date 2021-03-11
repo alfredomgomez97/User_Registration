@@ -12,7 +12,7 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@20.58.25.15:1521:xe","system","hr");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","alfredo","hr");
 			
 			DatabaseMetaData dbmd = conn.getMetaData();
 
